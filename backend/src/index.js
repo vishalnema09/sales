@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://sales-frontend-q16r.onrender.com" }));
 
 app.get("/", (_req, res) => {
   res.send("Backend working!");
